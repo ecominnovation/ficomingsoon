@@ -1,0 +1,16 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+@import "../assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../assets/stylesheets/bootstrap/normalize";
+
+// Core CSS
+@import "../assets/stylesheets/bootstrap/scaffolding";
+
+@import "../assets/stylesheets/bootstrap/grid";
+@import "../assets/stylesheets/bootstrap/tables";
+@import "../assets/stylesheets/bootstrap/forms";
+@import "../assets/stylesheets/bootstrap/buttons";
+

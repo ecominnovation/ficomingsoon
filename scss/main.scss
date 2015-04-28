@@ -1,0 +1,161 @@
+@import "compass";
+@import "_bootstrap";
+@import "_fi-sprites";
+
+
+@font-face {
+  font-family: 'FuturaPT-Book';
+  src: url('../assets/fonts/bootstrap/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),  url('../assets/fonts/bootstrap/FuturaPT-Book.woff') format('woff'), url('../assets/fonts/bootstrap/FuturaPT-Book.ttf')  format('truetype'), url('../assets/fonts/bootstrap/FuturaPT-Book.svg#FuturaPT-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	line-height: 1.2em;
+	background: url('../images/toilejouy-bg.jpg') no-repeat;
+	font-family: 'FuturaPT-Book';
+	.fi-main-container {
+		width: 75%;
+		margin:6% auto;
+		background-color: white;
+		padding: 30px;
+		text-align: center;
+		.fi-header {
+			margin-bottom: 30px;
+			.fi-blason img {
+				width: 22%;
+				max-width: 217px;
+				min-width: 102px;
+			}
+			.fi-logo img {
+				width: 100%;
+				max-width: 478px;
+			}
+		}
+		.fi-intro p {
+			&:first-child {
+				margin-bottom: 0;
+			}
+			font-size: 1.5em;
+			line-height: 1.5em;
+			letter-spacing: 0.07em;
+			margin-bottom: 15px;
+		}
+		.fi-form {
+			animation:0.5s;
+			input {
+				width: 100%;
+				max-width: 325px;
+				padding: 5px;
+				letter-spacing: 0.08em;
+				text-align: center;
+				font-size: 1.2em;
+				line-height: normal;
+				border: 1px solid #818181;
+				border-radius: 0;
+				&:focus {
+					outline:1px solid grey;
+				}
+			}
+			button {
+				display: inline-block;
+				margin-top: 20px;
+				border: none;
+				background: none;
+				font-size: 1.5em;
+				padding: 10px;
+				text-decoration: underline;
+			}
+			.error {
+				color:red;
+			}
+		}
+		.fi-thanks {
+			animation:0.5s;
+			display: none;
+			font-size: 1.3em;
+			.fi-registered {
+				margin:20px auto;
+				color: #818181;
+			}
+			.fi-thanks-message {
+				text-decoration: underline;
+			}
+		}
+	}
+	a {
+		color: black;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	h1, h2 {
+		font-weight: 400;
+	}
+	footer {
+		margin: 50px auto 0;
+		padding-top: 15px;
+		border-top:1px solid black;
+		max-width: 500px;
+		.fi-copy {
+			text-transform: uppercase;
+			font-size: 0.9em;
+			letter-spacing: 0.25em;
+		}
+	}
+	.fi-social-media {
+		a {
+			margin: 0 5px;
+		}
+		.fi-facebook {
+			@include use-sprite(facebook);
+			text-indent: 9999px;
+			display: inline-block;
+			position: relative;
+			top: 0.6em;
+		}
+		.fi-twitter {
+			@include use-sprite(twitter);
+			text-indent: 9999px;
+			display: inline-block;
+			position: relative;
+			top: 0.6em;
+		}
+		.fi-pinterest {
+			@include use-sprite(pinterest);
+			text-indent: 9999px;
+			display: inline-block;
+			position: relative;
+			top: 0.6em;
+		}
+		.fi-instagram {
+			@include use-sprite(instagram);
+			text-indent: 9999px;
+			display: inline-block;
+			position: relative;
+			top: 0.6em;
+		}
+	}
+}
+
+@media screen and (max-width : 375px) { 
+	body {
+		.fi-main-container {
+			width: 86%;
+			.fi-intro p {
+				&:first-child {
+					margin-bottom: 20px;
+				}
+				font-size: 1.2em;
+				line-height: 1.1em;
+				letter-spacing: 0.05em;
+			}
+		}
+	}
+}

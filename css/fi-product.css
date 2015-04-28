@@ -1,0 +1,252 @@
+/* line 7, ../scss/fi-product.scss */
+.fi-product-page * {
+  position: relative;
+}
+
+/* line 11, ../scss/fi-product.scss */
+.fi-product-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+/* line 16, ../scss/fi-product.scss */
+.fi-product-content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  margin-top: 8%;
+}
+@media (min-width: 768px) {
+  /* line 16, ../scss/fi-product.scss */
+  .fi-product-content {
+    float: left;
+    width: 16.66667%;
+  }
+}
+/* line 20, ../scss/fi-product.scss */
+.fi-product-content .fi-bd-stroke {
+  border-top: 2px solid black;
+  background: none;
+  width: 7%;
+}
+/* line 23, ../scss/fi-product.scss */
+.fi-product-content h1 {
+  background: white;
+  height: 0.75em;
+  display: inline-block;
+  padding-right: 0.1em;
+  margin: 0.7em 0;
+}
+/* line 27, ../scss/fi-product.scss */
+.fi-product-content h1 span {
+  top: -0.2em;
+  white-space: nowrap;
+}
+/* line 32, ../scss/fi-product.scss */
+.fi-product-content .fi-price {
+  background: white;
+  height: 0.75em;
+  display: inline-block;
+  padding-right: 0.25em;
+  font-size: 1.2em;
+}
+/* line 36, ../scss/fi-product.scss */
+.fi-product-content .fi-price span {
+  top: -0.4em;
+}
+/* line 41, ../scss/fi-product.scss */
+.fi-product-content .fi-vat-cond span {
+  font-size: 0.7em;
+  display: inline-block;
+  line-height: normal;
+}
+/* line 47, ../scss/fi-product.scss */
+.fi-product-content .fi-product-desc {
+  margin: 20px 0;
+  font-size: 0.9em;
+}
+/* line 51, ../scss/fi-product.scss */
+.fi-product-content .fi-product-attr {
+  font-size: 0.9em;
+}
+/* line 53, ../scss/fi-product.scss */
+.fi-product-content .fi-product-attr ul, .fi-product-content .fi-product-attr li {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 61, ../scss/fi-product.scss */
+.fi-product-actions {
+  font-size: 0.7em;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10%;
+  text-align: right;
+  padding-right: 2em;
+}
+@media (min-width: 768px) {
+  /* line 61, ../scss/fi-product.scss */
+  .fi-product-actions {
+    float: left;
+    width: 33.33333%;
+  }
+}
+/* line 68, ../scss/fi-product.scss */
+.fi-product-actions .fi-thumbnails img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border: 1px solid black;
+  margin-left: 1%;
+}
+/* line 76, ../scss/fi-product.scss */
+.fi-product-actions .fi-swatches img {
+  display: inline-block;
+  margin-left: 2%;
+}
+/* line 82, ../scss/fi-product.scss */
+.fi-product-actions .fi-swatches .fi-selected-swatch-img {
+  border: 1px solid black;
+}
+/* line 86, ../scss/fi-product.scss */
+.fi-product-actions div {
+  margin-bottom: 5%;
+}
+/* line 89, ../scss/fi-product.scss */
+.fi-product-actions .fi-add-to-cart button {
+  color: #007ada;
+  font-size: 2.5em;
+  text-decoration: underline;
+  padding-left: 0.4em;
+  border: none;
+  background: white;
+  height: 0.75em;
+  display: inline-block;
+}
+/* line 96, ../scss/fi-product.scss */
+.fi-product-actions .fi-add-to-cart button span {
+  top: -0.2em;
+}
+/* line 101, ../scss/fi-product.scss */
+.fi-product-actions .fi-delivery-payment p.fi-sm-title {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: "14px";
+}
+/* line 104, ../scss/fi-product.scss */
+.fi-product-actions .fi-delivery-payment .fi-sm-desc {
+  line-height: 1.3em;
+}
+
+/* line 110, ../scss/fi-product.scss */
+.fi-moreproducts-reco {
+  margin-bottom: 2em;
+}
+/* line 112, ../scss/fi-product.scss */
+.fi-moreproducts-reco h2 {
+  font-size: 2.2em;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+  text-align: center;
+}
+/* line 118, ../scss/fi-product.scss */
+.fi-moreproducts-reco .fi-product-reco {
+  margin: auto;
+  position: relative;
+}
+/* line 121, ../scss/fi-product.scss */
+.fi-moreproducts-reco .fi-product-reco h3 {
+  top: 40%;
+  position: absolute;
+  font-size: 2.1em;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+/* line 128, ../scss/fi-product.scss */
+.fi-moreproducts-reco .fi-product-reco h3 a {
+  background: white;
+  height: 0.75em;
+  display: inline-block;
+}
+/* line 130, ../scss/fi-product.scss */
+.fi-moreproducts-reco .fi-product-reco h3 a span {
+  top: -2px;
+}
+/* line 135, ../scss/fi-product.scss */
+.fi-moreproducts-reco .fi-product-reco b.fi-more-details {
+  top: 47%;
+  position: absolute;
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+}
+/* line 141, ../scss/fi-product.scss */
+.fi-moreproducts-reco .fi-product-reco b.fi-more-details a {
+  background: white;
+  height: 0.75em;
+  display: inline-block;
+  padding: 0 4px;
+  text-align: center;
+  text-decoration: underline;
+}
+/* line 146, ../scss/fi-product.scss */
+.fi-moreproducts-reco .fi-product-reco b.fi-more-details a span {
+  top: -5px;
+}
+
+/* line 155, ../scss/fi-product.scss */
+.fi-productbrand-wrapper .fi-productbrand-content {
+  margin: auto;
+  position: relative;
+}
+/* line 158, ../scss/fi-product.scss */
+.fi-productbrand-wrapper .fi-productbrand-content h3 {
+  top: 40%;
+  position: absolute;
+  font-size: 3em;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+/* line 165, ../scss/fi-product.scss */
+.fi-productbrand-wrapper .fi-productbrand-content h3 a {
+  background: white;
+  height: 0.75em;
+  display: inline-block;
+  color: #017efe;
+}
+/* line 168, ../scss/fi-product.scss */
+.fi-productbrand-wrapper .fi-productbrand-content h3 a span {
+  top: -8px;
+}
+/* line 173, ../scss/fi-product.scss */
+.fi-productbrand-wrapper .fi-productbrand-content p.fi-more-details {
+  top: 57%;
+  position: absolute;
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+}
+/* line 179, ../scss/fi-product.scss */
+.fi-productbrand-wrapper .fi-productbrand-content p.fi-more-details a {
+  background: white;
+  height: 0.75em;
+  display: inline-block;
+  padding: 0 4px;
+  text-align: center;
+  text-decoration: underline;
+  color: #017efe;
+}
+/* line 185, ../scss/fi-product.scss */
+.fi-productbrand-wrapper .fi-productbrand-content p.fi-more-details a span {
+  top: -5px;
+}

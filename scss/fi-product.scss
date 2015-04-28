@@ -1,0 +1,191 @@
+@import "compass";
+@import "variables";
+@import "../assets/stylesheets/bootstrap/mixins";
+@import "_mixins";
+
+.fi-product-page {
+	* {
+		position: relative;
+	}
+}
+.fi-product-image {
+		@include img-responsive();
+		position: absolute;
+}
+
+.fi-product-content {
+	@include make-sm-column(2);
+	position: relative;
+	margin-top:8%;
+	.fi-bd-stroke {
+		@include stroke($bold-stroke);
+	}
+	h1 {
+		@include shifted-bg('white');
+		padding-right: 0.1em;
+		margin: 0.7em 0;
+		span {
+			top:-0.2em;
+			white-space: nowrap;
+		}
+	}
+	.fi-price {
+		@include shifted-bg('white');
+		padding-right: 0.25em;
+		font-size: 1.2em;
+		span {
+			top:-0.4em;
+		}
+	}
+	.fi-vat-cond {
+		span {
+			font-size: 0.7em;
+			display: inline-block;
+			line-height: normal;
+		}
+	}
+	.fi-product-desc {
+		margin: 20px 0;
+		font-size: 0.9em;
+	}
+	.fi-product-attr {
+		font-size: 0.9em;
+		ul, li {
+	        list-style-position:inside;
+	        margin:0;
+	        padding:0;
+		}
+	}
+}
+
+.fi-product-actions {
+	font-size: 0.7em;
+	@include make-sm-column(4);
+	margin-top: 10%;
+	text-align: right;
+	padding-right:2em;
+	.fi-thumbnails {
+		img {
+			@include img-responsive();
+			display: inline-block;
+			border:1px solid black;
+			margin-left: 1%;
+		}
+	}
+	.fi-swatches {
+		img {
+			display: inline-block;
+			margin-left: 2%;
+		}
+		.fi-selected-swatch-text {
+		}
+		.fi-selected-swatch-img {
+			border:1px solid black;
+		}
+	}
+	div {
+		margin-bottom: 5%;
+	}
+	.fi-add-to-cart button {
+		color: #007ada;
+		font-size: 2.5em;
+		text-decoration: underline;
+		padding-left: 0.4em;
+		border:none;
+		@include shifted-bg('white');
+		span {
+			top:-0.2em;
+		}
+	}
+	.fi-delivery-payment {
+		p.fi-sm-title {
+			@include block-title('14px');
+		}
+		.fi-sm-desc {
+			line-height: 1.3em;
+		}
+	}
+}
+
+.fi-moreproducts-reco {
+	margin-bottom: 2em;
+	h2 {
+		font-size: 2.2em;
+		letter-spacing: 0.1em;
+		text-decoration: underline;
+		text-align: center;
+	}
+	.fi-product-reco {
+		margin: auto;
+		position: relative;
+		h3 {
+			top: 40%;
+			position: absolute;
+			font-size: 2.1em;
+			font-weight: 400;
+			width: 100%;
+			text-align: center;
+			a {
+				@include shifted-bg('white');
+				span {
+					top:-2px;
+				}
+			}
+		}
+		b.fi-more-details {
+			top: 47%;
+			position: absolute;
+			font-size: 1.2em;
+			text-align: center;
+			width: 100%;
+			a {
+				@include shifted-bg('white');
+				padding: 0 4px;
+				text-align: center;
+				text-decoration: underline;
+				span {
+					top:-5px;
+				}
+			}
+		}
+	}
+}
+
+.fi-productbrand-wrapper {
+	.fi-productbrand-content {
+		margin: auto;
+		position: relative;
+		h3 {
+			top: 40%;
+			position: absolute;
+			font-size: 3em;
+			font-weight: 400;
+			width: 100%;
+			text-align: center;
+			a {
+				@include shifted-bg('white');
+				color: $fi-lightblue;
+				span {
+					top:-8px;
+				}
+			}
+		}
+		p.fi-more-details {
+			top: 57%;
+			position: absolute;
+			font-size: 1.2em;
+			text-align: center;
+			width: 100%;
+			a {
+				@include shifted-bg('white');
+				padding: 0 4px;
+				text-align: center;
+				text-decoration: underline;
+				color: $fi-lightblue;
+				span {
+					top:-5px;
+				}
+			}
+		}
+	}
+}

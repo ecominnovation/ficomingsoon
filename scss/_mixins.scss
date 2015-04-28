@@ -1,0 +1,24 @@
+// Mixins
+
+@mixin block-title ($font-size) {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: $font-size;
+}
+
+@mixin leftnav {
+	margin: 0.5em 0;
+	list-style: none;
+}
+
+@mixin stroke ($stroke-width) {
+	border-top: $stroke-width solid black;
+	background: none;
+	width: 7%;
+}
+
+@mixin shifted-bg ($color) {
+	background: white;
+  	height: 0.75em;
+  	display: inline-block;
+}

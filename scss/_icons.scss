@@ -1,0 +1,72 @@
+@import "compass/utilities/sprites/base";
+ 
+// General Sprite Defaults
+// You can override them before you import this file.
+$icon-sprite-base-class: ".icon-sprite" !default;
+$icon-sprite-dimensions: false !default;
+$icon-position: 0% !default;
+$icon-spacing: 0 !default;
+$icon-repeat: no-repeat !default;
+ 
+// These variables control the generated sprite output
+// You can override them selectively before you import this file.
+$icon-delete-position: $icon-position !default;
+$icon-delete-spacing: $icon-spacing !default;
+$icon-delete-repeat: $icon-repeat !default;
+$icon-edit-position: $icon-position !default;
+$icon-edit-spacing: $icon-spacing !default;
+$icon-edit-repeat: $icon-repeat !default;
+$icon-new-position: $icon-position !default;
+$icon-new-spacing: $icon-spacing !default;
+$icon-new-repeat: $icon-repeat !default;
+$icon-save-position: $icon-position !default;
+$icon-save-spacing: $icon-spacing !default;
+$icon-save-repeat: $icon-repeat !default;
+ 
+ 
+$icon-sprites: sprite-map("icon/*.png",
+  $delete-position: $icon-delete-position,
+  $delete-spacing: $icon-delete-spacing,
+  $delete-repeat: $icon-delete-repeat,
+  $edit-position: $icon-edit-position,
+  $edit-spacing: $icon-edit-spacing,
+  $edit-repeat: $icon-edit-repeat,
+  $new-position: $icon-new-position,
+  $new-spacing: $icon-new-spacing,
+  $new-repeat: $icon-new-repeat,
+  $save-position: $icon-save-position,
+  $save-spacing: $icon-save-spacing,
+  $save-repeat: $icon-save-repeat);
+ 
+// All sprites should extend this class
+// The icon-sprite mixin will do so for you.
+#{$icon-sprite-base-class} {
+  background: $icon-sprites no-repeat;
+}
+ 
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin icon-sprite-dimensions($name) {
+  @include sprite-dimensions($icon-sprites, $name)
+}
+ 
+// Move the background position to display the sprite.
+@mixin icon-sprite-position($name, $offset-x: 0, $offset-y: 0) {
+  @include sprite-position($icon-sprites, $name, $offset-x, $offset-y)
+}
+ 
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin icon-sprite($name, $dimensions: $icon-sprite-dimensions, $offset-x: 0, $offset-y: 0) {
+  @extend #{$icon-sprite-base-class};
+  @include sprite($icon-sprites, $name, $dimensions, $offset-x, $offset-y)
+}
+ 
+@mixin icon-sprites($sprite-names, $dimensions: $icon-sprite-dimensions) {
+  @include sprites($icon-sprites, $sprite-names, $icon-sprite-base-class, $dimensions)
+}
+ 
+// Generates a class for each sprited image.
+@mixin all-icon-sprites($dimensions: $icon-sprite-dimensions) {
+  @include icon-sprites(delete edit new save, $dimensions);
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<project name="demo" basedir="." default="example">
+    <target name="example">
+        <echo message="yep, I will create a directory" />
+        <mkdir dir="/my/path/" />
+    </target> 
+    <target name="update" description="Install ficomingsoon project">
+        <echo>Update ficomingsoon project</echo>
+        <exec command="echo 'git pull' &amp;&amp; git pull" />
+    </target>
+</project>
