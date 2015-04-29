@@ -147,6 +147,7 @@ body {
 
 @media screen and (max-width : 375px) { 
 	body {
+		background-size: auto;
 		.fi-main-container {
 			width: 86%;
 			.fi-intro p {
@@ -158,5 +159,23 @@ body {
 				letter-spacing: 0.05em;
 			}
 		}
+	}
+}
+
+@media only screen and (min-device-width : 414px) {
+	body {
+		background-size: auto;
+	}
+}
+
+@media only screen and (min-device-width: 768px){
+	body {
+		background-size: auto;
+	}
+}
+
+@media only screen and (min-device-width: 1280px){
+	body {
+		background-size: cover;
 	}
 }

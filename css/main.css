@@ -2708,10 +2708,10 @@ input[type="button"].btn-block {
 body {
   line-height: 1.2em;
   background: url("../images/toilejouy-bg.jpg") no-repeat;
-  background-size:cover;
+  background-size: cover;
   font-family: 'FuturaPT-Book';
 }
-/* line 23, ../scss/main.scss */
+/* line 24, ../scss/main.scss */
 body .fi-main-container {
   width: 75%;
   margin: 6% auto;
@@ -2719,37 +2719,37 @@ body .fi-main-container {
   padding: 30px;
   text-align: center;
 }
-/* line 29, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 body .fi-main-container .fi-header {
   margin-bottom: 30px;
 }
-/* line 31, ../scss/main.scss */
+/* line 32, ../scss/main.scss */
 body .fi-main-container .fi-header .fi-blason img {
   width: 22%;
   max-width: 217px;
   min-width: 102px;
 }
-/* line 36, ../scss/main.scss */
+/* line 37, ../scss/main.scss */
 body .fi-main-container .fi-header .fi-logo img {
   width: 100%;
   max-width: 478px;
 }
-/* line 41, ../scss/main.scss */
+/* line 42, ../scss/main.scss */
 body .fi-main-container .fi-intro p {
   font-size: 1.5em;
   line-height: 1.5em;
   letter-spacing: 0.07em;
   margin-bottom: 15px;
 }
-/* line 42, ../scss/main.scss */
+/* line 43, ../scss/main.scss */
 body .fi-main-container .fi-intro p:first-child {
   margin-bottom: 0;
 }
-/* line 50, ../scss/main.scss */
+/* line 51, ../scss/main.scss */
 body .fi-main-container .fi-form {
   animation: 0.5s;
 }
-/* line 52, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 body .fi-main-container .fi-form input {
   width: 100%;
   max-width: 325px;
@@ -2761,11 +2761,11 @@ body .fi-main-container .fi-form input {
   border: 1px solid #818181;
   border-radius: 0;
 }
-/* line 62, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 body .fi-main-container .fi-form input:focus {
   outline: 1px solid grey;
 }
-/* line 66, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 body .fi-main-container .fi-form button {
   display: inline-block;
   margin-top: 20px;
@@ -2775,58 +2775,58 @@ body .fi-main-container .fi-form button {
   padding: 10px;
   text-decoration: underline;
 }
-/* line 75, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 body .fi-main-container .fi-form .error {
   color: red;
 }
-/* line 79, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 body .fi-main-container .fi-thanks {
   animation: 0.5s;
   display: none;
   font-size: 1.3em;
 }
-/* line 83, ../scss/main.scss */
+/* line 84, ../scss/main.scss */
 body .fi-main-container .fi-thanks .fi-registered {
   margin: 20px auto;
   color: #818181;
 }
-/* line 87, ../scss/main.scss */
+/* line 88, ../scss/main.scss */
 body .fi-main-container .fi-thanks .fi-thanks-message {
   text-decoration: underline;
 }
-/* line 92, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 body a {
   color: black;
 }
-/* line 94, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 body a:hover {
   text-decoration: none;
 }
-/* line 98, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 body h1, body h2 {
   font-weight: 400;
 }
-/* line 101, ../scss/main.scss */
+/* line 102, ../scss/main.scss */
 body footer {
   margin: 50px auto 0;
   padding-top: 15px;
   border-top: 1px solid black;
   max-width: 500px;
 }
-/* line 106, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 body footer .fi-copy {
   text-transform: uppercase;
   font-size: 0.9em;
   letter-spacing: 0.25em;
 }
-/* line 113, ../scss/main.scss */
+/* line 114, ../scss/main.scss */
 body .fi-social-media a {
   margin: 0 5px;
 }
-/* line 116, ../scss/main.scss */
+/* line 117, ../scss/main.scss */
 body .fi-social-media .fi-facebook {
-  background-image: url('../images/icons-s2e3e58cb0d.png');
-  background-position: 0 0;
+  background-image: url('../images/icons-s1ccf56da81.png');
+  background-position: 0 -148px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 24px;
@@ -2837,7 +2837,7 @@ body .fi-social-media .fi-facebook {
   top: 0.6em;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  /* line 116, ../scss/main.scss */
+  /* line 117, ../scss/main.scss */
   body .fi-social-media .fi-facebook {
     background-image: url('../images/icons-2x-s39bfc6a39e.png');
     background-size: 24px 96px;
@@ -2846,10 +2846,10 @@ body .fi-social-media .fi-facebook {
     width: 24px;
   }
 }
-/* line 123, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 body .fi-social-media .fi-twitter {
-  background-image: url('../images/icons-s2e3e58cb0d.png');
-  background-position: 0 -72px;
+  background-image: url('../images/icons-s1ccf56da81.png');
+  background-position: -40px -72px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 24px;
@@ -2860,7 +2860,7 @@ body .fi-social-media .fi-twitter {
   top: 0.6em;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  /* line 123, ../scss/main.scss */
+  /* line 124, ../scss/main.scss */
   body .fi-social-media .fi-twitter {
     background-image: url('../images/icons-2x-s39bfc6a39e.png');
     background-size: 24px 96px;
@@ -2869,10 +2869,10 @@ body .fi-social-media .fi-twitter {
     width: 24px;
   }
 }
-/* line 130, ../scss/main.scss */
+/* line 131, ../scss/main.scss */
 body .fi-social-media .fi-pinterest {
-  background-image: url('../images/icons-s2e3e58cb0d.png');
-  background-position: 0 -48px;
+  background-image: url('../images/icons-s1ccf56da81.png');
+  background-position: -16px -72px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 24px;
@@ -2883,7 +2883,7 @@ body .fi-social-media .fi-pinterest {
   top: 0.6em;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  /* line 130, ../scss/main.scss */
+  /* line 131, ../scss/main.scss */
   body .fi-social-media .fi-pinterest {
     background-image: url('../images/icons-2x-s39bfc6a39e.png');
     background-size: 24px 96px;
@@ -2892,10 +2892,10 @@ body .fi-social-media .fi-pinterest {
     width: 24px;
   }
 }
-/* line 137, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 body .fi-social-media .fi-instagram {
-  background-image: url('../images/icons-s2e3e58cb0d.png');
-  background-position: 0 -24px;
+  background-image: url('../images/icons-s1ccf56da81.png');
+  background-position: -64px -72px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 24px;
@@ -2906,7 +2906,7 @@ body .fi-social-media .fi-instagram {
   top: 0.6em;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  /* line 137, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   body .fi-social-media .fi-instagram {
     background-image: url('../images/icons-2x-s39bfc6a39e.png');
     background-size: 24px 96px;
@@ -2918,17 +2918,39 @@ body .fi-social-media .fi-instagram {
 
 @media screen and (max-width: 375px) {
   /* line 149, ../scss/main.scss */
+  body {
+    background-size: auto;
+  }
+  /* line 151, ../scss/main.scss */
   body .fi-main-container {
     width: 86%;
   }
-  /* line 151, ../scss/main.scss */
+  /* line 153, ../scss/main.scss */
   body .fi-main-container .fi-intro p {
     font-size: 1.2em;
     line-height: 1.1em;
     letter-spacing: 0.05em;
   }
-  /* line 152, ../scss/main.scss */
+  /* line 154, ../scss/main.scss */
   body .fi-main-container .fi-intro p:first-child {
     margin-bottom: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) {
+  /* line 166, ../scss/main.scss */
+  body {
+    background-size: auto;
+  }
+}
+@media only screen and (min-device-width: 768px) {
+  /* line 172, ../scss/main.scss */
+  body {
+    background-size: auto;
+  }
+}
+@media only screen and (min-device-width: 1280px) {
+  /* line 178, ../scss/main.scss */
+  body {
+    background-size: cover;
   }
 }
